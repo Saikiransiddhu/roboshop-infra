@@ -15,43 +15,43 @@ Security Groups
 R53 records
 EC2 instances
 ## Firewalls
-## Web:
+#### Web:
 Ingress: Web instance should accept traffic from internet(0.0.0.0/0) on port no 80.
 
-## User:
+#### User:
 Ingress: User instance should accept traffic from
 
 Web instance on port 8080
 Payment instance on port 8080
-## Cart:
+#### Cart:
 Ingress: Cart instance should accept traffic from
 
 Web instance on port 8080
 Shipping instance on port 8080
 Payment instance on port 8080
-## Shipping:
+#### Shipping:
 Ingress: Shipping instance should accept traffic from
 
 Web instance on port 8080
-## Payment:
+#### Payment:
 Ingress: Payment instance should accept traffic from
 
 Web instance on port 8080<br>
-## MongoDB:
+#### MongoDB:
 Ingress: MongoDB instance should accept traffic from
 
 Catalogue instance on port no 27017
 User instance on port no 27017
-## Redis:
+#### Redis:
 Ingress: Redis instance should accept traffic from
 
 User instance on port 6379
 Cart instance on port 6379
-## MySQL:
+#### MySQL:
 Ingress: MySQL instance should accept traffic from
 
 Shipping instance on port 3306.
-## RabbitMQ:
+#### RabbitMQ:
 Ingress: RabbitMQ instance should accept traffic from
-
+s
 Payment instance on port 5372.
